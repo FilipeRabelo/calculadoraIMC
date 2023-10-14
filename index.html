@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-br">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport"
+					content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Projeto IMC</title>
+
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:wght@300;400;700&family=Public+Sans:wght@300;400;800&family=Roboto:wght@400;700&display=swap"
+					rel="stylesheet">
+		<!-- GOOGLE FONTS -->
+
+		<link type="text/css" href="./style.css" rel="stylesheet">
+		<!-- BOOTSTRAP -->
+
+		<script src="./script.js" defer></script>  <!-- defer para ler o script no final -->
+
+	</head>
+
+	<body>
+
+		<!--		CAIXA DE ALERTA-->
+
+		<div class="alert-error">
+			Digite Somente Números
+		</div>
+
+
+		<!--		CONTINAR PRINCIPAL-->
+
+		<div class="container">
+			<h1 id="neon">Calculadora de IMC</h1>
+
+			<main class="card">
+
+				<form action="">
+
+					<h1 class="titulo">Digite Peso e Altura</h1>
+
+					<div class="input-imc">
+						<label for="inPeso">Peso (Kg)</label>
+						<input id="inPeso" type="text" placeholder="Ex: 60" />
+					</div>
+
+					<div class="input-imc">
+						<label for="inAltura">Altura (m)</label>
+						<input id="inAltura" type="text" placeholder="Ex: 175" />
+					</div>
+
+					<button id="btnCalcular" type="submit">Calcular IMC <img src="./assets/seta.svg" alt="Seta apontando para direita"></button>
+
+				</form>
+
+			</main>
+
+		</div>
+
+
+		<!--		CAIXA DE MODAL		-->
+
+		<div class="modal-wrapper "> <!-- open -->
+			<div class="modal card">
+
+				<h2 class="titulo">
+
+					<button class="close">
+						<img src="assets/close.svg" alt="img para fechar a caixa">
+					</button>
+
+					Seu IMC é de 28
+				</h2>
+
+			</div>
+		</div>
+
+
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
