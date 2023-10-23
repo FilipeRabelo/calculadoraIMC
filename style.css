@@ -200,6 +200,10 @@ form input::placeholder{
   cursor: pointer;
 
   transition: transform .5s;
+
+  box-shadow: 0 0 40px rgba(0, 0, 255, 0.9);
+  animation: pulse 1s infinite alternate;
+
 }
 
 .modal button:hover{
@@ -210,7 +214,11 @@ form input::placeholder{
 
 
                       /*CAIXA DE ALERTA*/
-
+.alert-error.open{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .alert-error{
   position: absolute;
@@ -222,6 +230,11 @@ form input::placeholder{
   color: var(--tt-error);
   padding: .8rem 0;
   font-weight: bold;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30);
+  transition: transform .5s;
 }
 
 
