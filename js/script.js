@@ -8,6 +8,8 @@
   const inAltura = document.querySelector("#inAltura");
 
 
+
+
   // EVENTO PARA ENIVAR O FORM
   form.onsubmit  = function(evento) {
 
